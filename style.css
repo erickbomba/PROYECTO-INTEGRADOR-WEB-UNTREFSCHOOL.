@@ -26,27 +26,31 @@
  h1,h2,h3,h4,h5{font-family: 'Belanosima', sans-serif;
  }
 
- .inicio{
-    margin-bottom: 4rem;
-    height: 100%;
-    background-image: url(./img/encabezado.jpg);
-    background-size: contain;
- 
- }
+ header{
 
- h1{background-color: transparent;
-color: var(--color-background);
-text-align: center;}
+background-image: url(./img/encabezado.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+ h1{
+background-color: transparent;
+text-align: center;
+}
 
 nav,ul,li, li>a{
     list-style: none;
-    display: flex;
+    text-decoration: none;
+    color: var(--color-texto);
     flex-direction: column;
   justify-content: end;
-
+  text-decoration: underline;
+  background-color: transparent;
 }
 
-  
+
+
 
 
 
@@ -54,7 +58,10 @@ nav,ul,li, li>a{
 
 @media (min-width: 768px){
     nav,ul,li, li>a{
+        display: flex;
         flex-direction: row;
         padding: 1rem;
-    }
-}
+    }}
+
+
+    

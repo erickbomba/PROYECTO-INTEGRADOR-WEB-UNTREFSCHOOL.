@@ -87,20 +87,23 @@ section>p{align-self: center;}
 .ununo{grid-area: unno;}
 .undos{grid-area: undos;}
 
-section{}
-
-
-
-
 
 @media (min-width: 460px){} 
 
-@media (min-width: 768px){
+@media (min-width: 768px)
+
+
+{
     nav,ul,li, li>a{
         display: flex;
         flex-direction: row;
         padding: 1rem;
-    }}
+    }
+  header{
+    height: 30vw;
+  }
+  
+  }
 
 
     

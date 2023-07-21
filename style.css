@@ -49,6 +49,35 @@ nav,ul,li, li>a{
   background-color: transparent;
 }
 
+main{
+  grid-template-columns:2 1fr;
+  grid-template-rows: 4 100vw;
+  grid-template-areas:
+  "qsimg qsp"
+  "lp limg"
+  "pecard pecard"
+  "ununo undos"
+
+}
+ .qsimg{
+    grid-area: qsimg;
+    width: 50vw;
+    height: auto;
+ }
+ .qsp{
+    grid-area: qsp;
+ }
+
+ .lp{grid-area: lp;}
+
+ .limg{grid-area: limg;
+    width: 50vw;
+    height: auto;
+}
+  .pecard{grid-area: pecard;}
+.ununo{grid-area: unno;}
+.undos{grid-area: undos;}
+
 
 
 

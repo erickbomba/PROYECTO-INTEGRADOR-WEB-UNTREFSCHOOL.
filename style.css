@@ -1,3 +1,22 @@
 /* paleta de colores:  #FC7300 , #1F8A70 , #00425A , #181823, 
 #EFF5F5 */
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Belanosima', sans-serif; */
 
+:root {
+   
+    --color-principal: #1F8A70;
+    --color-texto:#181823;
+    --color-background:#EFF5F5;
+    --color-sinuso1: #FC7300;
+    --color-sinuso2: #00425A;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+ body{
+    font-family: ;
+    color: var(--color-texto);
+ }

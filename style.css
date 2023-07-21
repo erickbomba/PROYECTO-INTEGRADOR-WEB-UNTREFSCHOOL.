@@ -14,9 +14,47 @@
 
 *{
     box-sizing: border-box;
-    margin: 0;
+    background-color: var(--color-background);
+
 }
  body{
-    font-family: ;
+    font-family: 'Poppins', sans-serif;
     color: var(--color-texto);
+    display: grid;
+    margin: 0;
+ } 
+ h1,h2,h3,h4,h5{font-family: 'Belanosima', sans-serif;
  }
+
+ .inicio{
+    margin-bottom: 4rem;
+    height: 100%;
+    background-image: url(./img/encabezado.jpg);
+    background-size: contain;
+ 
+ }
+
+ h1{background-color: transparent;
+color: var(--color-background);
+text-align: center;}
+
+nav,ul,li, li>a{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  justify-content: end;
+
+}
+
+  
+
+
+
+@media (min-width: 460px){} 
+
+@media (min-width: 768px){
+    nav,ul,li, li>a{
+        flex-direction: row;
+        padding: 1rem;
+    }
+}

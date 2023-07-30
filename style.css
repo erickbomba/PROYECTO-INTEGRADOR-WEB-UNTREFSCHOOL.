@@ -27,6 +27,7 @@
   justify-content: center;
   text-align: center;
  }
+ h1{text-shadow: 10 px var(--color-background);}
  h4{font-family: 'Belanosima', sans-serif;
  }
 

@@ -138,14 +138,6 @@ div a{
 
 
 
-
-
-
-
-
-
-
-
 @media (min-width: 460px){
 
     /* falta */
@@ -174,4 +166,4 @@ div a{
         }
         nav{
           height: 10vw;
-        }
+        }}

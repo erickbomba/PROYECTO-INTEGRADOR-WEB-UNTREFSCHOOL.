@@ -1,0 +1,119 @@
+/* paleta de colores:  #FC7300 , #1F8A70 , #00425A , #181823, 
+#EFF5F5 */
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Belanosima', sans-serif; */
+
+:root {
+   
+    --color-principal: #1F8A70;
+    --color-texto:#181823;
+    --color-background:#EFF5F5;
+    --color-sinuso1: #FC7300;
+    --color-sinuso2: #00425A;
+}
+
+*{
+    box-sizing: border-box;
+    background-color: var(--color-background);
+
+}
+ body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-texto);
+    display: grid;
+    margin: 0;
+ } 
+ h1,h2,h3{font-family: 'Belanosima', sans-serif;
+  justify-content: center;
+  text-align: center;
+ }
+ h1{text-shadow: 10 px var(--color-background);}
+ h4{font-family: 'Belanosima', sans-serif;
+ }
+ h3{
+  font-size: 1.3rem;
+ }
+
+ header{
+
+background-image: url(./img/encabezado.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+/* mover panel superior */
+/* position: sticky;
+top: 0; */
+}
+
+ h1, header>h2{
+background-color: transparent;
+text-align: center;
+}
+
+
+nav,ul,li, li>a, nav>ul>h2{
+  font-size: 1.5rem;
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-texto);
+    flex-direction: column;
+  justify-content: end;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+nav li ul{
+  display: none;
+  align-items:center ;
+}
+
+nav li:hover >ul{
+  display: flex;
+}
+a:hover{
+    background-color: var(--color-principal);
+    color: var(--color-background);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 460px){
+
+    /* falta */
+    
+    } 
+    
+    @media (min-width: 768px){
+    header{
+    background-size: cover;
+    }
+    
+        nav,ul,li, li>a{
+            display: flex;
+            flex-direction: row;
+            padding: 1rem;
+            justify-content: center;
+        }
+        .menu{
+          margin-bottom: -40px;
+        }
+    
+        
+        nav li ul{
+          display: flex;
+        
+        }
+        nav{
+          height: 10vw;
+        }

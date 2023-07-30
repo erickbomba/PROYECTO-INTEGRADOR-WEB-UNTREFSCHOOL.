@@ -36,14 +36,19 @@ background-image: url(./img/encabezado.jpg);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
+/* mover panel superior */
+/* position: sticky;
+top: 0; */
 }
 
- h1{
+ h1, header>h2{
 background-color: transparent;
 text-align: center;
 }
 
-nav,ul,li, li>a{
+
+nav,ul,li, li>a, nav>ul>h2{
+  font-size: 1.5rem;
     list-style: none;
     text-decoration: none;
     color: var(--color-texto);
@@ -52,6 +57,18 @@ nav,ul,li, li>a{
   text-decoration: underline;
   background-color: transparent;
 }
+
+nav li ul{
+  display: none;
+  align-items:center ;
+}
+
+nav li:hover >ul{
+  display: flex;
+}
+
+
+
 
 main{
 
@@ -64,28 +81,33 @@ main{
   "ununo undos"
 
 }
-section {display: flex;}
+section {display: flex;
+flex-direction: column;}
 section>p{align-self: center;}
 
 
  .qsimg{
     grid-area: qsimg;
     width: 50vw;
-    height: auto;
+align-self: center;
  }
  .qsp{
     grid-area: qsp;
+    margin: 10px 10px;
  }
 
- .lp{grid-area: lp;}
+ .lp{grid-area: lp;
+margin: 10px 10px;}
 
  .limg{grid-area: limg;
     width: 50vw;
-    height: auto;
+    align-self: center;
 }
   .pecard{grid-area: pecard;}
-.ununo{grid-area: unno;}
-.undos{grid-area: undos;}
+.ununo{grid-area: unno;
+  margin: 10px 10px;}
+.undos{grid-area: undos;
+  margin: 10px 10px;}
 
 
 @media (min-width: 460px){} 
@@ -100,9 +122,20 @@ section>p{align-self: center;}
         padding: 1rem;
         justify-content: center;
     }
+
+    
+    nav li ul{
+      display: flex;
+    }
+  
+
+
   header{
     height: 30vw;
   }
+  section {display: flex;
+  flex-direction: row;}
+    
   
   }
 

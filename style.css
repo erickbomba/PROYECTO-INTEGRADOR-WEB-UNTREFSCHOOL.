@@ -130,12 +130,23 @@ footer{
   grid-template-columns:3 1fr;
   grid-template-rows: 1 100vw;
   grid-template-areas:
-  "rs inst contacto"
+  "rs inst contacto";
 
 }
+div a{
+  text-decoration: none;
+}
+
 .rs{grid-area: rs;}
 .inst{grid-area: inst;}
 .contacto{grid-area: contacto;}
+
+.rs, .inst,.contacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 
 
 
@@ -175,7 +186,7 @@ footer{
   
   }
 
-  a/* juste footer
+  /* ajuste footer
   footer{
     display: grid;
     grid-template-columns:3 1fr;

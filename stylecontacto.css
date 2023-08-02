@@ -4,85 +4,103 @@
 /* font-family: 'Belanosima', sans-serif; */
 
 :root {
-   
-    --color-principal: #1F8A70;
-    --color-texto:#181823;
-    --color-background:#EFF5F5;
-    --color-sinuso1: #FC7300;
-    --color-sinuso2: #00425A;
+
+  --color-principal: #1F8A70;
+  --color-texto: #181823;
+  --color-background: #EFF5F5;
+  --color-sinuso1: #FC7300;
+  --color-sinuso2: #00425A;
 }
 
-*{
-    box-sizing: border-box;
-    background-color: var(--color-background);
+* {
+  box-sizing: border-box;
+  background-color: var(--color-background);
 
 }
- body{
-    font-family: 'Poppins', sans-serif;
-    color: var(--color-texto);
-    display: grid;
-    margin: 0;
- } 
- h1,h2,h3{font-family: 'Belanosima', sans-serif;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-texto);
+  display: grid;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Belanosima', sans-serif;
   justify-content: center;
   text-align: center;
- }
- h1{text-shadow: 10 px var(--color-background);}
- h4{font-family: 'Belanosima', sans-serif;
- }
- h3{
+}
+
+h1 {
+  text-shadow: 10 px var(--color-background);
+}
+
+h4 {
+  font-family: 'Belanosima', sans-serif;
+}
+
+h3 {
   font-size: 1.3rem;
- }
+}
 
- header{
+header {
 
-background-image: url(./img/encabezado.jpg);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-/* mover panel superior */
-/* position: sticky;
+  background-image: url(./img/encabezado.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* mover panel superior */
+  /* position: sticky;
 top: 0; */
 }
 
- h1, header>h2{
-background-color: transparent;
-text-align: center;
+h1,
+header>h2 {
+  background-color: transparent;
+  text-align: center;
 }
 
 
-nav,ul,li, li>a, nav>ul>h2{
+nav,
+ul,
+li,
+li>a,
+nav>ul>h2 {
   font-size: 1.5rem;
-    list-style: none;
-    text-decoration: none;
-    color: var(--color-texto);
-    flex-direction: column;
+  list-style: none;
+  text-decoration: none;
+  color: var(--color-texto);
+  flex-direction: column;
   justify-content: end;
   text-decoration: underline;
   background-color: transparent;
 }
 
-nav li ul{
+nav li ul {
   display: none;
-  align-items:center ;
+  align-items: center;
 }
 
-nav li:hover >ul{
+nav li:hover>ul {
   display: flex;
 }
-a:hover{
-    background-color: var(--color-principal);
-    color: var(--color-background);
-  }
 
-.col, label{
-    color: var(--color-sinuso1);
-    font-size: 1.5rem;
-  }
+a:hover {
+  background-color: var(--color-principal);
+  color: var(--color-background);
+}
 
-  input::placeholder{
-    color: var(--color-sinuso1);
-  }
+.col,
+label {
+  color: var(--color-sinuso1);
+  font-size: 1.5rem;
+}
+
+input::placeholder {
+  color: var(--color-sinuso1);
+}
 
 /*   .form-control:hover{
     /* background-color: var(--color-principal); */
@@ -91,32 +109,43 @@ a:hover{
 footer
  */
 
- footer{
+footer {
   display: grid;
-  grid-template-columns:3 1fr;
+  grid-template-columns: 3 1fr;
   grid-template-rows: 1 100vw;
   grid-template-areas:
-  "rs inst contacto";
+    "rs inst contacto";
 
 }
-div a{
+
+div a {
   text-decoration: none;
   color: var(--color-texto);
   align-self: flex-start;
 }
 
-#volver{
+#volver {
   text-decoration: none;
   color: var(--color-texto);
-  text-align:center;
+  text-align: center;
 }
 
 
-.rs{grid-area: rs;}
-.inst{grid-area: inst;}
-.contacto{grid-area: contacto;}
+.rs {
+  grid-area: rs;
+}
 
-.rs, .inst,.contacto{
+.inst {
+  grid-area: inst;
+}
+
+.contacto {
+  grid-area: contacto;
+}
+
+.rs,
+.inst,
+.contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,42 +157,44 @@ div a{
 
 
 
-.icono{
+.icono {
   width: 25px;
   height: 25px;
 }
 
 
- */
+*/ @media (min-width: 460px) {
 
+  /* falta */
 
+}
 
-@media (min-width: 460px){
-
-    /* falta */
-    
-    } 
-    
-    @media (min-width: 768px){
-    header{
+@media (min-width: 768px) {
+  header {
     background-size: cover;
-    }
-    
-        nav,ul,li, li>a{
-            display: flex;
-            flex-direction: row;
-            padding: 1rem;
-            justify-content: center;
-        }
-        .menu{
-          margin-bottom: -40px;
-        }
-    
-        
-        nav li ul{
-          display: flex;
-        
-        }
-        nav{
-          height: 10vw;
-        }}
+  }
+
+  nav,
+  ul,
+  li,
+  li>a {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  .menu {
+    margin-bottom: -40px;
+  }
+
+
+  nav li ul {
+    display: flex;
+
+  }
+
+  nav {
+    height: 10vw;
+  }
+}

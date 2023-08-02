@@ -100,6 +100,7 @@ align-self: center;
     margin: 10px 10px;
  }
 
+
  .lp{grid-area: lp;
 margin: 10px 10px;}
 
@@ -216,6 +217,7 @@ background-size: cover;
   grid-area: qsimg;
   width: 35vw;
 }
+
 
 
 

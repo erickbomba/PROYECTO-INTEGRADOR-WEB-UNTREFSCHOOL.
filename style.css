@@ -131,16 +131,20 @@ text-align: center;
 /* ajustes footer */
 footer{
   display: grid;
-  grid-template-columns:3 1fr;
-  grid-template-rows: 1 100vw;
+  
+  grid-template-columns:1;
+  grid-template-rows: 3;
   grid-template-areas:
-  "rs inst contacto";
+  "rs"
+  "inst"
+  "contacto";
+  
 
 }
 div a{
   text-decoration: none;
   color: var(--color-texto);
-  align-self: flex-start;
+  align-self: center;
 }
 
 #volver{
@@ -233,7 +237,47 @@ background-size: cover;
   padding:40px;
   padding-left: 40px;
 
-  }}
+  }
+
+/* 
+ultimo ajuste footer */
+footer{
+  display: grid;
+  grid-template-columns:3 1fr;
+  grid-template-rows: 1 100vw;
+  grid-template-areas:
+  "rs inst contacto";
+
+}
+div a{
+  text-decoration: none;
+  color: var(--color-texto);
+  align-self: center;
+}
+
+#volver{
+  text-decoration: none;
+  color: var(--color-texto);
+  text-align:center;
+}
+
+
+.rs{grid-area: rs;}
+.inst{grid-area: inst;}
+.contacto{grid-area: contacto;}
+
+.rs, .inst,.contacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: space-around;
+}
+
+
+
+
+}
 
   /* ajuste footer
   footer{
@@ -247,3 +291,6 @@ background-size: cover;
 /*   .rs{grid-area: rs;}
   .inst{grid-area: inst;}
   .contacto{grid-area: contacto;} */
+
+
+  

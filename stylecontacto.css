@@ -107,8 +107,8 @@ input::placeholder {
 
 /* ajustes footer */
 footer {
+  padding-top: 2rem;
   display: grid;
-
   grid-template-columns: 1;
   grid-template-rows: 3;
   grid-template-areas:
@@ -198,6 +198,7 @@ div a {
     grid-template-rows: 1 100vw;
     grid-template-areas:
       "rs inst contacto";
+  
 
   }
 

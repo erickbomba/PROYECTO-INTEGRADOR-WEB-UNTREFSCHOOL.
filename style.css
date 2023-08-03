@@ -60,6 +60,7 @@ h1,
 header>h2 {
   background-color: transparent;
   text-align: center;
+
 }
 
 
@@ -87,6 +88,10 @@ nav li:hover>ul {
   display: flex;
 }
 
+h2{
+  box-shadow: var(--color-principal);
+}
+
 
 
 
@@ -105,6 +110,7 @@ main {
 section {
   display: flex;
   flex-direction: column;
+  box-shadow: 1px 1px 5px var(--color-texto);
 }
 
 section>p {

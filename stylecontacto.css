@@ -92,6 +92,23 @@ a:hover {
   color: var(--color-background);
 }
 
+
+
+/* ajustes formulario */
+
+.container{
+  padding: 5px 5px 5px 5px;
+  box-shadow: 1px 1px 10px var(--color-texto)inset;
+  border-radius: 10px;
+}
+.btn{
+  color: var(--color-texto);
+  background-color: var(--color-sinuso1);
+}
+.btn:hover{
+  background-color: var(--color-principal);
+}
+
 .col,
 label {
   color: var(--color-sinuso1);

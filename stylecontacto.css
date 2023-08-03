@@ -104,20 +104,25 @@ a:hover {
 
 div>h1{
 text-decoration: underline;
+color: var(--color-sinuso1);
 }
 
 .btn{
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
   color: var(--color-texto);
   background-color: var(--color-sinuso1);
 }
 .btn:hover{
-  background-color: var();
+  background-color: var(--color-principal);
 }
 
 .col,
 label {
   color: var(--color-sinuso1);
   font-size: 1.5rem;
+  padding-bottom: 3px;
 }
 
 input::placeholder {

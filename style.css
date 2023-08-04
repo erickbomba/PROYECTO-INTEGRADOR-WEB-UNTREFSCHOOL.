@@ -241,6 +241,8 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+*{border:solid 2px red}
+  
   header {
     background-size: cover;
   }

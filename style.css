@@ -126,13 +126,14 @@ section>p {
 
 .qsp {
   grid-area: qsp;
-  margin: 10px 10px;
+/*   margin: 10px 10px; */
+  padding:10px 10px;
 }
 
 
 .lp {
-  grid-area: lp;
-  margin: 10px 10px;
+ /*   margin: 10px 10px; */
+  padding:10px 10px;
 }
 
 .limg {
@@ -147,12 +148,14 @@ section>p {
 
 .ununo {
   grid-area: unno;
-  margin: 10px 10px;
+ /*   margin: 10px 10px; */
+  padding:10px 10px;
 }
 
 .undos {
   grid-area: undos;
-  margin: 10px 10px;
+ /*   margin: 10px 10px; */
+  padding:10px 10px;
 }
 
 
@@ -278,6 +281,7 @@ a:hover {
   .qsimg,
   .limg {
   /*   margin: 20px 20px; */
+padding:20px 20px;
     grid-area: qsimg;
     width: 35vw;
   }

@@ -277,7 +277,7 @@ a:hover {
 
   .qsimg,
   .limg {
-    margin: 20px 20px;
+  /*   margin: 20px 20px; */
     grid-area: qsimg;
     width: 35vw;
   }
